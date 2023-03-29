@@ -17,3 +17,7 @@
     width: 20px;
     background-color: white;
 }
+
+.grid-item:hover {
+    background-color: blue;
+}
