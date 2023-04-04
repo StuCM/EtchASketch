@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -7,9 +8,24 @@
     <title>Etch-A-Sketch</title>
 </head>
 <body>
-    <script src="main.js" type="text/javascript" defer></script>
-    <div id="grid" class="grid-container">
-
+    <header class="title"><strong>Etch-A-Sketch</strong></header>
+    <div class="main">
+        <div>
+            <div class="slidecontainer">
+                <p>Grid: <span id="sliderText"></span></p>
+                <input type="range" min="4" max="100" value="16" class="slider" id="gridSize">
+                <div class="controlPanel">
+                    <button class="newGridBtn">New Grid</button>
+                    <div class="checkboxContainer">
+                        <div class="checkbox"><input type="checkbox" id="colourCheck">Random Colours</input></div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <div id="grid" class="grid-container"></div>
     </div>
+    
+    <script src="main.js" type="text/javascript" defer></script> 
 </body>
 </html>

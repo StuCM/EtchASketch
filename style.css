@@ -3,21 +3,107 @@
     --grid-cols: 1;
 }
 
+body {
+    background-color: #fff1c5;
+    color: #ff7800;
+    font-family: 'Sofia Pro', sans-serif;
+}
+
+.title {
+    font-size: 60px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1000px;
+    margin: 0 auto;
+
+}
+
 .grid-container {
     display: inline-grid;
-    grid-template-rows: repeat(var(--grid-rows), 20px);
-    grid-template-columns: repeat(var(--grid-cols), 20px);
-    border: 1px solid black;
+    height: 500px;
+    width: 500px;
+    grid-template-rows: repeat(var(--grid-rows), 1fr);
+    grid-template-columns: repeat(var(--grid-cols), 1fr);
+    border: 1px solid #ff7800;
     grid-gap: 1px;
-    background-color: black;
+    background-color: #ff7800;
+    margin: 0 auto;
 }
 
 .grid-item {
-    height: 20px;
-    width: 20px;
     background-color: white;
 }
 
 .grid-item:hover {
     background-color: blue;
 }
+
+.shadeCell {
+    brightness: 
+}
+
+.controlPanel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.checkbox {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin: 1rem;
+}
+
+.slidecontainer {
+    text-align: center;
+}
+
+.slider {
+    -webkit-appearance: none;
+    width: 75%;
+    height: 15px;
+    border-radius: 5px;  
+    background: #f7d2b2;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+  }
+  
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%; 
+    background: #ff7800;
+    cursor: pointer;
+  }
+  
+  .slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #ff7800;
+    cursor: pointer;
+  }
+
+  .newGridBtn {
+    background-color: #ff8f00;
+    color: white;
+    border: none;
+    border-radius: 2rem;
+    padding: 1rem 3rem;
+    margin: 2rem;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    text-align: center; 
+  }
